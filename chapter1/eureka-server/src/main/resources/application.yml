@@ -1,0 +1,12 @@
+server:
+  port: 7071
+eureka:
+  instance:
+    #
+    prefer-ip-address: true
+  #生产环境中官方是不建议修改默认配置的，因为会破坏eureka的保护模式
+  server:
+    #关闭保护模式（生产环境不建议修改）
+    enable-self-preservation: false
+    #清理间隔（默认60*1000毫秒），生产环境不建议修改
+    eviction-interval-timer-in-ms: 60000
